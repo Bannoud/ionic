@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Persons Database!</ion-title>
+     <ion-buttons end>
+      <button ion-button icon-only  >
+         <ion-icon ios="ios-person" md="md-person"></ion-icon>
+      </button>
+    </ion-buttons>
+
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h2>list de utilisateur</h2>
+   
+ 
+    
+    <ion-list>
+  <ion-item-sliding  >
+    <ion-item>
+      <ion-thumbnail item-start>
+           <img src="assets/image/person.png">
+       
+      </ion-thumbnail>
+      <h2> BANNOUD</h2>
+      <p> fatimaezzahra</p>
+      
+         
+    </ion-item>
+    <ion-item-options side="right">
+      <button ion-button color="primary"  >
+         <ion-icon ios="ios-create" md="md-create"></ion-icon>
+        Edit
+      </button>
+      <button ion-button color="danger"  >
+        <ion-icon ios="ios-trash" md="md-trash"></ion-icon>
+        Delete
+      </button>
+    </ion-item-options>
+     
+  </ion-item-sliding>
+</ion-list>
+<button ion-button round (click)="goAdd()">Ajouter un utilisateur</button>
+</ion-content>
